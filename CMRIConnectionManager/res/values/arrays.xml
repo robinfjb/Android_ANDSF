@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="wifi_choice">
+        <item>recommended network</item>
+        <item>preferred network</item>
+     </string-array>
+     <string-array name="static_priority">
+        <item>WiFi first</item>
+        <item>3G first</item>
+     </string-array>
+</resources>

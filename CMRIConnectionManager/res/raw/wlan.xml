@@ -1,0 +1,15 @@
+<AccessNetworkInformationRef>
+<ID>CMCC</ID>
+    <Addr>CMCCSSID</Addr>
+    <AddrType>SSID</AddrType>
+    <BearerType>WLAN</BearerType>
+    <BearerParams>
+      <WLAN>
+        <SSIDList>
+          <S1>
+            <SSID>CMCCSSID</SSID>
+          </S1>
+        </SSIDList>
+      </WLAN>
+    </BearerParams>
+</AccessNetworkInformationRef>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    
+    <com.chinamobile.android.connectionmanager.ui.TitleBar
+        android:id="@+id/TitleBar"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="@dimen/titlebar_height" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TitleBar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        >
+        
+    <!-- <TextView 
+        android:id="@+id/static_policy_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/static_set_title"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#ff000000"
+        />
+        
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#3c3c3c" /> -->
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/static_set_info"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:textColor="#ff000000"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+         android:orientation="vertical"
+        >
+        
+        <TextView 
+            android:id="@+id/static_policy_prompt_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/static_set_prompt_title"
+	        android:textSize="20sp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:textColor="#ff000000"
+        />
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dip"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:background="#3c3c3c" />
+        
+	    <TextView 
+	        android:id="@+id/static_policy_priority_1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:textColor="#ff000000"
+	        />
+        
+       <TextView 
+	        android:id="@+id/static_policy_priority_2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:textColor="#ff000000"
+	        />
+        
+    	</LinearLayout>
+    </LinearLayout>
+   
+     <LinearLayout 
+        android:id="@+id/change_priority"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FF828586"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        >
+        <Button 
+            android:id="@+id/change_priority_btn"
+            android:layout_width="wrap_content"
+        	android:layout_height="50dp"
+        	android:layout_gravity="center"
+        	android:minWidth="200dp"
+        	android:background="@drawable/button_backgound"
+        	android:text="@string/static_set_button"
+         />
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/static_set_bellow"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/change_priority"
+        android:textColor="#ff000000"
+        />
+    
+   
+
+</RelativeLayout>

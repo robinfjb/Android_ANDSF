@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="wifi_choice">
+        <item>推荐网络</item>
+        <item>偏好网络</item>
+     </string-array>
+     <string-array name="static_priority">
+        <item>WiFi优先</item>
+        <item>3G优先</item>
+     </string-array>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="PreferencesTheme" >
+		<item name="android:layout">@layout/preference_item</item>
+	</style>
+
+	<style name="CustomWindowTitleBackground">
+        <item name="android:background">@drawable/title_background</item>
+    </style>
+    
+	<style name="CustomWindowTitleText" >
+          <item name="android:textSize">20sp</item>  
+          <item name="android:textColor">#FFffffff</item>
+          <item name="android:gravity">center_horizontal</item>
+          <item name="android:paddingLeft">@dimen/titlebar_margin</item>
+     </style>
+    
+	<style name="customListView" parent="@android:style/Widget.ListView">
+        <item name="android:divider">@drawable/line_background</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+    
+	<style name="NoTitleBar" parent="@android:style/Theme.Light.NoTitleBar">
+		<item name="android:textColorPrimaryInverse">@android:color/black</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleSize">@dimen/titlebar_height</item>
+        <item name="android:windowTitleStyle">@style/CustomWindowTitleText</item> 
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+        <item name="android:listViewStyle">@style/customListView</item>
+    </style>
+    
+	<style name="Default" parent="@style/NoTitleBar">
+        <item name="android:windowNoTitle">false</item>
+    </style>
+    
+	<style name="CMDialog" parent="@android:style/Theme.Dialog">
+	    <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_content_bg</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+<!-- <style name="cm_edittext_style" parent="@android:style/Widget.EditText">
+<item name="android:background">@drawable/cm_edittext</item>
+</style> -->
+
+</resources>

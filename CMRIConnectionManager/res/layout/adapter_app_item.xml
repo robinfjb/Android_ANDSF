@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <CheckBox
+            android:id="@+id/app_checkbox_dailog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"/>
+    
+    
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" >
+
+        <ImageView
+        android:id="@+id/app_img_dailog"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+         />
+        
+        <TextView
+            android:id="@+id/app_label_dailog"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/app_img_dailog"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:textSize="16sp" />
+
+        
+    </RelativeLayout>
+
+</LinearLayout>

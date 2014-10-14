@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">China Mobile ConnectionManager</string>
+
+    <!-- UI -->
+    <string name="map">map</string>
+    <string name="setting">setting</string>
+    <string name="profile">profile</string>
+    <string name="help">help</string>
+    <string name="about">about</string>
+    <string name="status">status</string>
+    <string name="start">start</string>
+    <string name="stop">stop</string>
+    <string name="add">Add</string>
+    <string name="title">ANDSF CONNECTION MANAGER</string>
+    <string name="status_msg">Status</string>
+    <string name="status_online">Online</string>
+    <string name="status_offline">OffLine</string>
+    <string name="status_Connecting">Connecting to: </string>
+    <string name="status_Connected">Connected to: </string>
+    <string name="status_no_connect">No Connection</string>
+    <string name="status_apply_policy">Applying Policy</string>
+    <string name="status_dowload_xml">Downloading policy from server</string>
+    <string name="status_new_policy">Has a new policy</string>
+    <string name="status_undefine">Not start</string>
+    <string name="status_scanning">Is Scanning WLAN</string>
+    <string name="status_scan_failed">No available network</string>
+    <string name="status_request_failed">download failed, start to apply local policy</string>
+    <string name="status_left_msg">Current Status:</string>
+    <string name="time_left_msg">Connection Time:</string>
+    <string name="wifi_logo_msg">Wi-Fi</string>
+    <string name="wifi_toggle_on">Open</string>
+    <string name="wifi_toggle_off">Close</string>
+    
+    <!-- Notification -->
+    <string name="notification_title">CMCC Message</string>
+    <string name="notification_preferred_msg">You have a preferred WiFi in this location</string>
+    <string name="notification_policy_msg">You have a new policy</string>
+    <string name="notification_mobile_data">Please check mobile data radio first</string>
+    <string name="notification_hotspot_count">There are %s CMCC Hotspots around you</string>
+    <string name="notification_hotspot_count_none">There is no hotspot around you</string>
+    
+    <!-- Dialog -->
+    <string name="preferred_dialog_title">Please select network</string>
+    <string name="policy_dialog_title">Policy prompt</string>
+    <string name="policy_dialog_content">Start to apply the new policy</string>
+    <string name="navigate_to_location_setting">Detected that you do not have opened the network 
+        location, this application needs to open the network location function, set location now?</string>
+    <string name="open_mobile_data">If mobile data not opened yet, please click setting button to open mobile
+        data radio first, otherwise please click cancel button</string>
+    <string name="toast_msg">You choose </string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="never_show_again">Remember my choice</string>
+    <string name="select">Select</string>
+    
+    <!-- Maps -->
+    <string name="conn_wrong">Network error</string>
+    <string name="permission_wrong">Maps key unauthorized</string>
+    <string name="route_bus_btn">Bus</string>
+    <string name="route_drive_btn">Drive</string>
+    <string name="route_walk_btn">Walk</string>
+    <string name="route_search_my_location">My location</string>
+    <string name="route_wrong">sorry, no results</string>
+    <string name="geo_wrong">Getting location time out</string>
+    <string name="map_connect">Connect</string>
+    <string name="map_direction">Direction</string>
+    <string name="map_pop_title">Information</string>
+    <string name="map_pop_ssid">SSID:</string>
+    <string name="map_pop_last_connection">Is preferred Network:</string>
+    <string name="map_pop_signal_strength">Signal Strength:</string>
+    <string name="map_connecting_prompt">Connecting:</string>
+    <string name="map_routing_prompt">Searching for the route</string>
+    <string name="map_geoing_prompt">Getting your location</string>
+    <string name="map_connect_result_success">Connect success</string>
+    <string name="map_connect_result_failed">Sorry, Connect failed</string>
+    <string name="map_toast_already_connected">This hot spot has been already connected</string>
+    <string name="map_toast_setting_account">cannot be connected, please set account first</string>
+    <string name="map_is_scanning_msg">is scanning</string>
+    <string name="map_connect_status">Connection Status:</string>
+    <string name="map_is_connect">connected</string>
+    <string name="map_is_not_connect">unconnected</string>
+    <string name="map_last_connected_yes">Yes</string>
+    <string name="map_last_connected_no">No</string>
+    <string name="map_signal_strength_unknow">Unknown</string>
+    <string name="map_signal_strength_nofound">Not found</string>
+    <string name="map_signal_strength_strong">Strong</string>
+    <string name="map_signal_strength_weak">Low</string>
+    <string name="map_signal_strength_medium">Medium</string>
+    <string name="map_connect_status_unknown">Unknown</string>
+    <string name="map_connect_status_scanning">Scanning</string>
+    <string name="map_connect_status_success">Connect success</string>
+    <string name="map_connect_status_failed">Connect failed</string>
+    <string name="map_connect_status_open_wifi">Opening WiFi radio</string>
+    <string name="map_connect_status_connecting">Connecting</string>
+    <string name="map_connect_status_connect_forbidden">No signal</string>
+    <string name="map_connect_status_already_connect">Already connected</string>
+    
+    <!-- Setting -->
+    <string name="setting_title">Settings</string>
+    <string name="dynamic_title">Get Policy From Server</string>
+    <string name="dynamic_summary">If this is unchecked, the application will use static policy only. No server connection made</string>
+    <string name="signal_check_title">Wi-Fi Signal Strength Check</string>
+    <string name="signal_check_summary">This restrict the application to connect to excellent signal strength network only</string>
+    <string name="_3g_continuously_title">3G permanent effective</string>
+    <string name="_3g_continuously_summary">allow the 3G connection permanent effective</string>
+    <string name="auto_run_summary">The service auto run after phone restart</string>
+    <string name="auto_run_title">Auto Run</string>
+    <string name="ask_before_apply_title">Policy&#038;Hotspot Notification</string>
+    <string name="ask_before_apply_summary">This option will prompt user before apply policy and prompt if there are hotspots around</string>
+    <string name="user_preferred_title">User Connected Notification</string>
+    <string name="user_preferred_summary">This option will turn on/off notification to user if user revisit a previously save Wi-Fi connected hotspot</string>
+	<string name="user_account_summary">Enable user setup CMCC WIFI account</string>
+	<string name="user_account_title">Maintain Credential</string>
+	<string name="static_setting_summary">This option enable the user to view and set the static policy priority</string>
+	<string name="static_setting_title">Set Static Policy</string>
+	<string name="app_setting_summary">This option enable the user to view and set the preferred network for apps on the phone</string>
+	<string name="app_setting_title">Designate preferred network for App</string>
+	<string name="log_option_summary">This will bring user to view the log</string>
+	<string name="log_option_title">View Log</string>
+	<string name="wifi_auto_close_title">Auto Break WiFi</string>
+	<string name="wifi_auto_close_summary">This will help user break WiFi connection if its not use for a limited time</string>
+	<string name="hotspot_notify_title">HotSpots Notification</string>
+	<string name="hotspot_notify_summary">Notify when found CMCC hotspots</string>
+	<string name="first_3g">3G first</string>
+	<string name="first_wifi">WiFi first</string>
+	<string name="wifi_radio_title">Wi-Fi Radio</string>
+	<string name="wifi_radio_on">Wi-Fi radio opened</string>
+	<string name="wifi_radio_off">Wi-Fi radio closed</string>
+	
+	<!-- account -->
+	<string name="username_input_title">Username</string>
+	<string name="username_input_hint">Enter your username</string>
+	<string name="password_input_title">Password</string>
+	<string name="password_input_hint">Enter your password</string>
+	<string name="new_password_input_hint">Enter your new password</string>
+	<string name="new_password_confirm_input_hint">Confirm your new password</string>
+	<string name="old_password_input_hint">Enter your old password</string>
+	<string name="peap_username_input_title">Username(EAP PEAP)</string>
+	<string name="peap_hint">This only applicable to CMCC-AUTO</string>
+	<string name="peap_password_input_title">Password(EAP PEAP)</string>
+	<string name="account_same_tick">Tick this if both using same credential</string>
+	<string name="save_btn">Save</string>
+	<string name="cancel_btn">Cancel</string>
+	<string name="account_warning_title">Set account warning</string>
+	<string name="account_warning">Sorry, please set the account first</string>
+	<string name="sms_send_msg">open by sms</string>
+	<string name="str_sms_sent_success">sms send successfully, please wait the prompt</string>
+	<string name="str_sms_sent_failed">sms send failed</string>
+	<string name="new_psw_send_msg">change password</string>
+	<string name="change_psw_title">Change password via SMS</string>
+	<string name="send">Send</string>
+	<string name="input_error">*Input error</string>
+	<string name="account_title">User Credential</string>
+	<string name="cmcc_title">CMCC</string>
+	<string name="cmcc_auto_title">CMCC-AUTO</string>
+	<string name="is_opened">your account is opened, please input the username and password</string>
+	<string name="opened_once">opened account successfully, please send sms "CZWLANZDMM" to 10086 to get password</string>
+	
+	<!-- static policy -->
+	<string name="static_set_title">Static Policy</string>
+	<string name="static_set_info">This is the default policy running if no policy retrieved from server</string>
+	<string name="static_set_prompt_title">Current priority order</string>
+	<string name="static_set_dialog_title">Priority order</string>
+	<string name="static_set_bellow">To change the priority, press the button below</string>
+	<string name="static_set_button">Change priority</string>
+	
+	<!-- crash prompt -->
+	<string name="crash_msg">Sorry, the application will be closed exceptionally</string>
+	
+	<!-- log -->
+	<string name="log_title">Application Log</string>
+	<string name="log_msg">this section show the log of active server policy</string>
+	
+	<!-- sms -->
+	<string name="sms_title">Open and Modify Account</string>
+	<string name="sms_finish_msg">Auto fill CMCC-AUTO account finished</string>
+	<string name="label_select_set_summary">"Open packages: Open WLAN packages to get &lt;font color='#00a2ff'>CMCC-AUTO&lt;/font>'s username and password. Monthly cost of packages will be charged to the phone bill."</string>
+    <string name="label_select_set_summary_change">"Modify password: please fill in the password of &lt;font color='#00a2ff'>CMCC-AUTO&lt;/font> which you want to modify."</string>
+    <string name="label_select_set_notify">Please select the option</string>
+    <string name="label_select_set_notify2">Open packages</string>
+    <string name="traffic">Traffic Packages</string>
+    <string name="duration">Time Packages</string>
+    <string name="sms_open_acount_msg">Open CMCC-AUTO packages</string>
+    <string name="sms_modify_account_pwd_msg">Modify password</string>
+    <string name="sms_send_sms_btn_msg">send message</string>
+    <string name="login_how_to_get_account_msg">Obtain username and password</string>
+    <string name="login_how_to_get_account_link">"&lt;u>Click here for details&lt;/u>"</string>
+    <string name="sms_auto_open_acount_msg">20元包1GB/月，每月不限时长，流量用尽后可按短信提示订购叠加流量包</string>
+    <string name="sms_cmcc_open_normal_msg">标准资费,按分钟计算，0.05元/分钟， 不足一分钟按一分钟计算</string>
+    <string name="sms_cmcc_open_5_msg">套餐1,5元包2小时/月，按使用时间累计，超出部分0.05元/分钟</string>
+    <string name="sms_cmcc_open_10_msg">套餐2,10元包5小时/月，按使用时间累计，超出部分0.05元/分钟</string>
+    <string name="sms_cmcc_open_20_msg">套餐3,20元包15小时/月，按使用时间累计，超出部分0.05元/分钟</string>
+    <string name="sms_cmcc_open_30_msg">套餐4,30元包30小时/月，按使用时间累计，超出部分0.05元/分钟</string>
+    <string name="sms_cmcc_open_50_msg">套餐5,50元包80小时/月，按使用时间累计，超出部分0.05元/分钟</string>
+    <string name="sms_cmcc_open_100_msg">套餐6,100元包200小时/月，按使用时间累计，超出部分0.05元/分钟</string>
+    <string name="sms_cmcc_open_200_msg">套餐7,200元包月不限时</string>
+    
+    <!-- help -->
+    <string name="help_content">"&lt;p>Welcome to China Mobile WLAN Connection Manager, this software can help you to connect to preferred network at any time, any place, and release you from manual network searching, switching operation, let you enjoy network easily.&lt;/p>
+        &lt;p>When you first launch this software, please configure CMCC account accordingly first by click “Account” button at the bottom of main screen, then input CMCC and CMCC-AUTO account info. If have no CMCC-AUTO account, you can acquire these at “How to get username and password” page by send SMS, no need to input manually.&lt;/p>
+        &lt;p>To click “Start” button, Client would get communication with backbone server to get surrounding available hotspots, if you want to get more visual detailed info, please click “Map” button, message box would pop up by clicking one specific hotspot on map, you can select to connect or route to this hotspot from current location.&lt;/p>
+        &lt;p>&lt;font color='#00a2ff'>Status Button&lt;/font>&lt;br/>Display current status, network name, duration&lt;/p>
+        &lt;p>&lt;font color='#00a2ff'>Setting page&lt;/font>&lt;br/>
+        &lt;br/>&lt;br/>1、Autorun&lt;br/>The service auto run after phone restart
+        &lt;br/>&lt;br/>2、WiFi radio&lt;br/>Enabe/Disable OS WiFi
+        &lt;br/>&lt;br/>3、WiFi Signal Strength Check&lt;br/>The application would check signal strength before connecting to a network
+        &lt;br/>&lt;br/>4、Get Policy From Server&lt;br/>The application will communicate with server by sending current location info and get policy from server, then try to connect to a preferred network
+        &lt;br/>&lt;br/>5、Policy Permission and Hotspot Notification&lt;br/>This option will prompt surrounding hotspot count and prompt user before apply any policy
+        &lt;br/>&lt;br/>6、Designate preferred network for App&lt;br/>Subscribers can designate his preferred network for specific App, then when this App being launched, client would try to connect to his preferred network
+        &lt;br/>&lt;br/>7、User Connected Notification&lt;br/>This option will turn on/off notification to user if user revisit a previously saved WiFi connected hotspot
+        &lt;br/>&lt;br/>8、Static Policy&lt;br/>If uncheck “Get Policy From Server” option, then application will use Static Policy
+        &lt;br/>&lt;br/>9、Log&lt;br/>Display applied policy info
+        &lt;/p>"
+    </string>
+    <string name="help_title">Help</string>
+    
+    <!-- about -->
+    <string name="about_content">Version: %1$s&lt;p>CMCC All Rights Reserved&lt;br>Copyright© 2012&lt;/p>&lt;p>This version can be applied to the Android 2.2 and above operating system phones&lt;/p>&lt;p>Service Phone: 10086&lt;/p></string>
+    <string name="about_title">About %1$s</string>
+    
+    <!-- Log -->
+    <string name="log_get_policy_message"> apply policy</string>
+    
+    <!-- guide -->
+    <string name="guide_start_app">Start app</string>
+    
+    <!-- App policy -->
+    <string name="app_policy_title">Designate preferred network for App</string>
+    <string name="delete_item">Delete</string>
+    <string name="delete_lable">Warning</string>
+    <string name="app_select_title">Select App</string>
+    <string name="app_network_select_title">Select Network</string>
+    <string name="app_network_select_content">Your current setting is %1$s，different from policy from server，continue to apply %1$s ？</string>
+    <string name="app_first_3g">3G/2G</string>
+	<string name="app_first_wifi">WiFi</string>
+</resources>

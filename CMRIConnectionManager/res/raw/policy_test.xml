@@ -1,0 +1,132 @@
+<Discovery>
+<D1>
+
+    <AccessNetworkType>
+3
+    </AccessNetworkType>
+
+    <AccessNetworkArea>
+        <_3GPP_Location>
+            <C1>
+                <PLMN>
+46000
+                </PLMN>
+
+                <LAC>
+18c2
+                </LAC>
+
+                <GERAN_CI>
+1111001100100001
+                </GERAN_CI>
+            </C1>
+        </_3GPP_Location>
+
+        <WLAN_Location>
+            <S1>
+                <SSID>
+PCCW1x
+                </SSID>
+            </S1>
+        </WLAN_Location>
+
+        <Geo_Location>
+            <Circular>
+                <L1>
+                    <AnchorLatitude>
+011011000110010010110110
+                    </AnchorLatitude>
+
+                    <AnchorLongitude>
+010101100111100101000111
+                    </AnchorLongitude>
+
+                    <Radius>
+0000000010000000
+                    </Radius>
+                </L1>
+
+                <L2>
+                    <AnchorLatitude>
+                    </AnchorLatitude>
+
+                    <AnchorLongitude>
+                    </AnchorLongitude>
+
+                    <Radius>
+                    </Radius>
+                </L2>
+            </Circular>
+        </Geo_Location>
+
+        <PLMN>
+46000
+        </PLMN>
+    </AccessNetworkArea>
+
+</D1>
+
+<D2>
+
+    <AccessNetworkType>
+3
+    </AccessNetworkType>
+
+    <AccessNetworkArea>
+        <_3GPP_Location>
+            <C1>
+                <PLMN>
+46000
+                </PLMN>
+
+                <LAC>
+18c2
+                </LAC>
+
+                <GERAN_CI>
+1111001100100001
+                </GERAN_CI>
+            </C1>
+        </_3GPP_Location>
+
+        <WLAN_Location>
+            <S1>
+                <SSID>
+CoovaChill
+                </SSID>
+            </S1>
+        </WLAN_Location>
+
+        <Geo_Location>
+            <Circular>
+                <L1>
+                    <AnchorLatitude>
+                    </AnchorLatitude>
+
+                    <AnchorLongitude>
+                    </AnchorLongitude>
+
+                    <Radius>
+                    </Radius>
+                </L1>
+
+                <L2>
+                    <AnchorLatitude>
+                    </AnchorLatitude>
+
+                    <AnchorLongitude>
+                    </AnchorLongitude>
+
+                    <Radius>
+                    </Radius>
+                </L2>
+            </Circular>
+        </Geo_Location>
+
+        <PLMN>
+46000
+        </PLMN>
+    </AccessNetworkArea>
+
+</D2>
+</Discovery>

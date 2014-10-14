@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="fill_horizontal"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <com.chinamobile.android.connectionmanager.ui.TitleBar
+        android:id="@+id/TitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:layout_alignParentTop="true"
+         />
+
+    <com.chinamobile.android.connectionmanager.ui.BottomMenu
+        android:id="@+id/account_menu_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TitleBar"
+        android:layout_above="@id/account_menu_linearlayout" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_horizontal"
+                android:text="@string/cmcc_title"
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line_background" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/username_input_title"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+
+            <com.chinamobile.android.connectionmanager.ui.CMEditText
+                android:id="@+id/account_input"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username_input_hint"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:textSize="15sp" 
+                android:textColor="#FF000000"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/password_input_title"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+
+            <com.chinamobile.android.connectionmanager.ui.CMEditText
+                android:id="@+id/password_input"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_input_hint"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textSize="15sp" 
+                 android:textColor="#FF000000"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <CheckBox
+                android:id="@+id/use_same_account"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/account_same_tick"
+                android:textColor="#ff000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/cmcc_auto_title"
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line_background" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/login_how_to_get_account_msg"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/link_to_sms"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:clickable="true"
+                    android:text="@string/login_how_to_get_account_link"
+                    android:textColor="@drawable/text_color_selector"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/username_input_title"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+
+            <com.chinamobile.android.connectionmanager.ui.CMEditText
+                android:id="@+id/account_peap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username_input_hint"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:textSize="15sp" 
+                 android:textColor="#FF000000"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/password_input_title"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+
+            <com.chinamobile.android.connectionmanager.ui.CMEditText
+                android:id="@+id/password_peap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_input_hint"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textSize="15sp" 
+                 android:textColor="#FF000000"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line_background" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/save_account_action"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_login"
+                    android:text="@string/save_btn" />
+
+                <Button
+                    android:id="@+id/cancel_account_action"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_login"
+                    android:text="@string/cancel_btn" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    
+</RelativeLayout>

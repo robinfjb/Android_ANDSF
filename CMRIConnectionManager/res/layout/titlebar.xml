@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        >
+
+        <Button
+            
+            android:id="@+id/cancel_ation"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/titlebar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/account_title"
+            android:textColor="#ffffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/save_action"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="9sp" />
+    </RelativeLayout>

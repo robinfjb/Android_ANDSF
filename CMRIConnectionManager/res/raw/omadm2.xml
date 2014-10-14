@@ -1,0 +1,24 @@
+<SyncML xmlns="SYNCML:SYNCML1.2">
+ <SyncHdr>
+  <VerDTD>1.2</VerDTD>
+  <VerProto>DM/1.2</VerProto>
+  <SessionID>456</SessionID>
+  <MsgID>3</MsgID>
+  <Target>
+   <LocURI>IMEI:493005100592800</LocURI>
+  </Target>
+  <Source>
+   <LocURI>http://198.51.100.1/ANDSF_Server/ANDSF</LocURI>
+  </Source>
+ </SyncHdr>
+ <SyncBody>
+  <Status>
+   <MsgRef>2</MsgRef>
+   <CmdID>2</CmdID>
+   <CmdRef>0</CmdRef>
+   <Cmd>SyncHdr</Cmd>
+   <Data>200</Data>
+  </Status>
+  <Final/>
+ </SyncBody>
+</SyncML>

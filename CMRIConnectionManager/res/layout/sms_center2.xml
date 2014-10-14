@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <com.chinamobile.android.connectionmanager.ui.TitleBar
+        android:id="@+id/TitleBar"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/titlebar_height" />
+
+    <LinearLayout
+        android:id="@+id/send_sms_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/send_sms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_login"
+            android:text="@string/sms_send_sms_btn_msg"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/package_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_below="@id/TitleBar">
+
+        <TextView
+            android:id="@+id/sms_center_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/sms_center_title_change_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/title_background">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/traffic_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:gravity="center"
+                    android:text="@string/traffic"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/color_dark"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/duration_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+					android:background="@android:color/transparent"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:gravity="center"
+                    android:text="@string/duration"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/color_dark"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:text="@string/label_select_set_notify2"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@id/package_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/send_sms_area" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/sms_cmcc_auto_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/radio_item_bg_selector" >
+                    <RadioButton
+                        android:id="@+id/sms_action_open_auto_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/radio_button"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="2dp"
+                        android:textSize="15sp"
+                        android:text="@string/sms_auto_open_acount_msg"
+                        android:textColor="#ff000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/radio_item_bg_selector" >
+                    <RadioButton
+                        android:id="@+id/sms_action_modify_auto_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/radio_button"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:text="@string/sms_modify_account_pwd_msg"
+                        android:textColor="#ff000000" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp" >
+                    <include layout="@layout/dialog_modify_password" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sms_cmcc_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/radio_item_bg_selector" >
+                    <RadioButton
+                        android:id="@+id/sms_action_open_cmcc_account_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/radio_button"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:text="@string/sms_cmcc_open_normal_msg"
+                        android:textColor="#ff000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/radio_item_bg_selector" >
+                    <RadioButton
+                        android:id="@+id/sms_action_open_cmcc_account_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/radio_button"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:text="@string/sms_cmcc_open_5_msg"
+                        android:textColor="#ff000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/radio_item_bg_selector" >
+                    <RadioButton
+                        android:id="@+id/sms_action_open_cmcc_account_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/radio_button"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:text="@string/sms_cmcc_open_10_msg"
+                        android:textColor="#ff000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/radio_item_bg_selector" >
+                    <RadioButton
+                        android:id="@+id/sms_action_open_cmcc_account_20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/radio_button"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:text="@string/sms_cmcc_open_20_msg"
+                        android:textColor="#ff000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/radio_item_bg_selector" >
+                    <RadioButton
+                        android:id="@+id/sms_action_open_cmcc_account_30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/radio_button"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:text="@string/sms_cmcc_open_30_msg"
+                        android:textColor="#ff000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/radio_item_bg_selector" >
+                    <RadioButton
+                        android:id="@+id/sms_action_open_cmcc_account_50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/radio_button"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:text="@string/sms_cmcc_open_50_msg"
+                        android:textColor="#ff000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/radio_item_bg_selector" >
+                    <RadioButton
+                        android:id="@+id/sms_action_open_cmcc_account_100"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/radio_button"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:text="@string/sms_cmcc_open_100_msg"
+                        android:textColor="#ff000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/radio_item_bg_selector" >
+                    <RadioButton
+                        android:id="@+id/sms_action_open_cmcc_account_200"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/radio_button"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:text="@string/sms_cmcc_open_200_msg"
+                        android:textColor="#ff000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/radio_item_bg_selector" >
+                    <RadioButton
+                        android:id="@+id/sms_action_modify_cmcc_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/radio_button"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:text="@string/sms_modify_account_pwd_msg"
+                        android:textColor="#ff000000" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp" >
+                    <include layout="@layout/dialog_modify_password2" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</RelativeLayout>

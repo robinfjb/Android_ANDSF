@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cmri_bottom_bar"
+    android:orientation="horizontal"
+    android:weightSum="3">
+    
+
+    
+    <ImageButton
+        android:id="@+id/menu_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_icon_nav_sessions"/>
+    
+    <ImageView 
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cmri_bottom_bar_divider"
+        />
+    
+    <ImageButton
+        android:id="@+id/menu_map"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_icon_nav_contacts"/>
+
+    <ImageView 
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cmri_bottom_bar_divider"
+        />
+   
+    <ImageButton
+        android:id="@+id/menu_profile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_icon_nav_more"/>
+</LinearLayout>

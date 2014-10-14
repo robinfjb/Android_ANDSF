@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <com.chinamobile.android.connectionmanager.ui.BottomMenu
+        android:id="@+id/home_menu_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/home_menu_linearlayout" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/cmri_logo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:src="@drawable/cmri_app_logo" />
+
+            <LinearLayout
+                android:id="@+id/msg_area"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/timer_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/status_left_msg"
+                        android:textColor="#918E8E"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/status_msg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="#607FF0"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/time_left_msg"
+                        android:textColor="#918E8E"
+                        android:textSize="14sp" />
+
+                    <com.chinamobile.android.connectionmanager.ui.CMChronometer
+                        android:id="@+id/time_chromometer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textColor="#607FF0"
+                        android:textSize="26sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- <RelativeLayout
+                android:id="@+id/wifi_toggle_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="-4dp"
+                android:background="@drawable/wifi_toggle_bg" >
+
+                <ImageView
+                    android:id="@+id/wifi_logo_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_flow_wifi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/wifi_logo_pic"
+                    android:text="@string/wifi_logo_msg"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+
+                <com.chinamobile.android.connectionmanager.ui.ToggleButton
+                    android:id="@+id/wifi_toggle"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/transparent" />
+            </RelativeLayout> -->
+
+            <Button
+                android:id="@+id/start_service"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/button_login"
+                android:text="@string/start"
+                android:textColor="#FFFFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

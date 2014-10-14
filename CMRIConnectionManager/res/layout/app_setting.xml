@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical" >
+
+        <com.chinamobile.android.connectionmanager.ui.TitleBar
+            android:id="@+id/TitleBar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/titlebar_height" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0" >
+
+            <ListView
+                android:id="@+id/select_app_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:fastScrollEnabled="true" />
+
+            <ProgressBar
+                android:id="@+id/select_app_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/progress_normal" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/add_app_action"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_login"
+                android:text="@string/add"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/save_setting_action"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_login"
+                android:text="@string/save_btn"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+   <RelativeLayout
+        android:id="@+id/app_policy_tip_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucent_background"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/shake_tip_1"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50.0dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/shake_tip_1" />
+        
+        <ImageView
+            android:id="@+id/shake_tip_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shake_tip_1"
+            android:layout_marginTop="-20dp"
+            android:src="@drawable/shake_tip_2" />
+    </RelativeLayout> 
+</FrameLayout>

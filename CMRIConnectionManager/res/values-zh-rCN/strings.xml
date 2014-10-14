@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">中国移动连接管理器</string>
+
+    <!-- UI -->
+    <string name="map">地图</string>
+    <string name="setting">设置</string>
+    <string name="profile">配置</string>
+    <string name="help">帮助</string>
+    <string name="about">关于</string>
+    <string name="status">状态</string>
+    <string name="start">开始</string>
+    <string name="stop">停止</string>
+    <string name="add">添加</string>
+    <string name="title">ANDSF 连接管理器</string>
+    <string name="status_msg">状态</string>
+    <string name="status_online">启动</string>
+    <string name="status_offline">关闭</string>
+    <string name="status_Connecting">正在连接：</string>
+    <string name="status_Connected">已连上：</string>
+    <string name="status_no_connect">无连接</string>
+    <string name="status_apply_policy">正在运行策略</string>
+    <string name="status_dowload_xml">从服务器下载策略</string>
+    <string name="status_new_policy">有新策略</string>
+    <string name="status_undefine">未启动</string>
+    <string name="status_scanning">扫描周围WLAN</string>
+    <string name="status_scan_failed">未扫描到任何有效网络</string>
+    <string name="status_request_failed">下载失败，运行本地策略</string>
+    <string name="status_left_msg">当前状态：</string>
+    <string name="time_left_msg">本次登录时长（仅供参考）</string>
+    <string name="wifi_logo_msg">无线网络</string>
+    <string name="wifi_toggle_on">开启</string>
+    <string name="wifi_toggle_off">关闭</string>
+    
+    <!-- Notification -->
+    <string name="notification_title">中国移动 消息提醒</string>
+    <string name="notification_preferred_msg">您在这附近有一WiFi偏好</string>
+    <string name="notification_policy_msg">您收到一条新策略</string>
+    <string name="notification_mobile_data">请先检测数据通信是否打开，点击继续连接，此提示在点击后不再显示</string>
+    <string name="notification_hotspot_count">附近有%s个移动热点</string>
+    <string name="notification_hotspot_count_none">附近未有移动热点</string>
+    
+    <!-- Dialog -->
+    <string name="preferred_dialog_title">请选择一个网络</string>
+    <string name="policy_dialog_title">策略提醒</string>
+    <string name="policy_dialog_content">开始应用新策略</string>
+    <string name="navigate_to_location_setting">检测到您没有开启GPS功能，
+        				是否在设置中打开GPS？</string>
+    <string name="open_mobile_data">如果数据通信尚未打开，请点击设置按钮到系统设置页面设置，
+        				否则请点取消按钮</string>
+    <string name="toast_msg">您选择了</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="close">关闭</string>
+    <string name="never_show_again">记住我的选择</string>
+    <string name="select">选择</string>
+    
+    <!-- Maps -->
+    <string name="conn_wrong">您的网络出错了</string>
+    <string name="permission_wrong">地图Key未授权</string>
+    <string name="route_bus_btn">公交</string>
+    <string name="route_drive_btn">驾车</string>
+    <string name="route_walk_btn">步行</string>
+    <string name="route_search_my_location">我的位置</string>
+    <string name="route_wrong">抱歉，未找到结果</string>
+    <string name="geo_wrong">定位超时</string>
+    <string name="map_connect">连接</string>
+    <string name="map_direction">路线</string>
+    <string name="map_pop_title">热点信息</string>
+    <string name="map_pop_ssid">SSID：</string>
+    <string name="map_pop_last_connection">是偏好网络：</string>
+    <string name="map_pop_signal_strength">信号强度：</string>
+    <string name="map_connecting_prompt">正在连接：</string>
+    <string name="map_routing_prompt">正在查询路线</string>
+    <string name="map_geoing_prompt">正在定位</string>
+    <string name="map_connect_result_success">连接成功</string>
+    <string name="map_connect_result_failed">对不起，连接失败</string>
+    <string name="map_toast_already_connected">此热点已连接</string>
+    <string name="map_toast_setting_account">无法连接，请先设置账号</string>
+    <string name="map_is_scanning_msg">正在扫描。。。</string>
+    <string name="map_connect_status">连接状态：</string>
+    <string name="map_is_connect">已连接</string>
+    <string name="map_is_not_connect">未连接</string>
+    <string name="map_last_connected_yes">是</string>
+    <string name="map_last_connected_no">否</string>
+    <string name="map_signal_strength_unknow">未知</string>
+    <string name="map_signal_strength_nofound">未找到</string>
+    <string name="map_signal_strength_strong">强</string>
+    <string name="map_signal_strength_weak">弱</string>
+    <string name="map_signal_strength_medium">中</string>
+    <string name="map_connect_status_unknown">未知</string>
+    <string name="map_connect_status_scanning">正在扫描。。。</string>
+    <string name="map_connect_status_success">连接成功</string>
+    <string name="map_connect_status_failed">连接失败</string>
+    <string name="map_connect_status_open_wifi">正在打开WiFi开关。。。</string>
+    <string name="map_connect_status_connecting">正在连接。。。</string>
+    <string name="map_connect_status_connect_forbidden">无信号</string>
+    <string name="map_connect_status_already_connect">已连接</string>
+    
+    <!-- Setting -->
+    <string name="setting_title">设置</string>
+    <string name="dynamic_title">动态获取策略</string>
+    <string name="dynamic_summary">允许从策略服务器动态自动下载策略</string>
+    <string name="signal_check_title">Wi-Fi信号强度检测</string>
+    <string name="signal_check_summary">允许信号强度策略有效</string>
+    <string name="_3g_continuously_title">3G永久有效</string>
+    <string name="_3g_continuously_summary">允许3G连接永久有效</string>
+    <string name="auto_run_summary">开机后自动运行</string>
+    <string name="auto_run_title">自动运行</string>
+    <string name="ask_before_apply_title">策略询问及热点提示</string>
+    <string name="ask_before_apply_summary">应用策略之前是否询问以及是否提示周围有可用的热点</string>
+    <string name="user_preferred_title">Wi-Fi偏好</string>
+    <string name="user_preferred_summary">记住各个位置的WIFI偏好</string>
+    <string name="user_account_summary">设置移动热点账号</string>
+	<string name="user_account_title">账号设置</string>
+	<string name="static_setting_summary">查看和设置静态策略</string>
+	<string name="static_setting_title">设置静态策略</string>
+	<string name="app_setting_summary">查看和设定应用的优选网络</string>
+	<string name="app_setting_title">设定应用的优选网络</string>
+	<string name="log_option_summary">查看日志</string>
+	<string name="log_option_title">日志</string>
+	<string name="wifi_auto_close_title">WiFi自动切断</string>
+	<string name="wifi_auto_close_summary">如果您在15分钟内未使用WiFi，程序自动帮您关闭WiFi</string>
+	<string name="hotspot_notify_title">热点提醒</string>
+	<string name="hotspot_notify_summary">有移动热点时提醒</string>
+	<string name="first_3g">3G/2G优先</string>
+	<string name="first_wifi">WiFi优先</string>
+	<string name="wifi_radio_title">Wi-Fi开关</string>
+	<string name="wifi_radio_on">Wi-Fi开关打开</string>
+	<string name="wifi_radio_off">Wi-Fi开关关闭</string>
+	
+	<!-- account -->
+	<string name="username_input_title">用户名</string>
+	<string name="username_input_hint">请输入用户名</string>
+	<string name="password_input_title">密码</string>
+	<string name="password_input_hint">请输入密码</string>
+	<string name="new_password_input_hint">输入新密码</string>
+	<string name="new_password_confirm_input_hint">再次输入新密码</string>
+	<string name="old_password_input_hint">输入旧密码</string>
+	<string name="peap_username_input_title">用户名(EAP PEAP)</string>
+	<string name="peap_hint">只针对CMCC-AUTO</string>
+	<string name="peap_password_input_title">密码(EAP PEAP)</string>
+	<string name="account_same_tick">CMCC-AUTO也使用此账号</string>
+	<string name="save_btn">保存</string>
+	<string name="cancel_btn">取消</string>
+	<string name="account_warning_title">请先设置账号</string>
+	<string name="account_warning">对不起，您尚未设置账号\n, 请到设置页面进行设置</string>
+	<string name="sms_send_msg">短信开通</string>
+	<string name="str_sms_sent_success">短信已发出,请耐心等待提示</string>
+	<string name="str_sms_sent_failed">短信发送失败</string>
+	<string name="new_psw_send_msg">修改密码</string>
+	<string name="change_psw_title">发短信修改密码</string>
+	<string name="send">发送</string>
+	<string name="input_error">*输入有误，请重新输入</string>
+	<string name="account_title">用户账号</string>
+	<string name="cmcc_title">CMCC</string>
+	<string name="cmcc_auto_title">CMCC-AUTO</string>
+	<string name="is_opened">此号码之前已开通了CMCC-AUTO，请手动输入用户名密码，用户名为您的手机号码，如果您忘了密码，请发送短信"CZWLANZDMM"到10086获取密码</string>
+	<string name="opened_once">开通成功，请查收短信，并手动输入用户名密码，用户名为您的手机号码，请发送短信"CZWLANZDMM"到10086获取密码</string>
+	
+	<!-- static policy -->
+	<string name="static_set_title">静态策略</string>
+	<string name="static_set_info">如果没有从服务器取得策略，默认使用此策略</string>
+	<string name="static_set_prompt_title">当前网络优先级</string>
+	<string name="static_set_dialog_title">网络优先级</string>
+	<string name="static_set_bellow">修改网络优先级，请按下面按钮</string>
+	<string name="static_set_button">修改优先级</string>
+	
+	<!-- crash prompt -->
+	<string name="crash_msg">程序发生异常，对您造成不便尽情谅解</string>
+	
+	<!-- log -->
+	<string name="log_title">策略日志</string>
+	<string name="log_msg">显示运行策略的日志</string>
+	
+	<!-- sms -->
+	<string name="sms_title">开通和修改账户</string>
+	<string name="sms_finish_msg">已完成账号设置</string>
+	<string name="label_select_set_summary">"开通套餐：开通WLAN套餐即可获取&lt;font color='#00a2ff'>WLAN自动认证(CMCC-AUTO)&lt;/font>的用户帐号和密码。套餐每月所需费用将从手机话费中扣除。"</string>
+    <string name="label_select_set_summary_change">"修改密码：请填写您要修改的&lt;font color='#00a2ff'>WLAN自动认证(CMCC-AUTO)&lt;/font>套餐密码。"</string>
+    <string name="label_select_set_notify">请选择相应操作</string>
+    <string name="label_select_set_notify2">开通套餐</string>
+    <string name="traffic">包流量</string>
+    <string name="duration">包时长</string>
+    <string name="sms_open_acount_msg">开通CMCC-AUTO套餐</string>
+    <string name="sms_modify_account_pwd_msg">修改账户密码</string>
+    <string name="sms_send_sms_btn_msg">发送短信</string>
+    <string name="login_how_to_get_account_msg">如何获取用户名和密码</string>
+    <string name="login_how_to_get_account_link">"&lt;u>点击查看详情&lt;/u>"</string>
+    <string name="sms_auto_open_acount_msg">20元包1GB/月，每月不限时长，流量用尽后可按短信提示订购叠加流量包</string>
+    <string name="sms_cmcc_open_normal_msg">标准资费，按分钟计算，0.05元/分钟， 不足一分钟按一分钟计算</string>
+    <string name="sms_cmcc_open_5_msg">套餐1，5元包2小时/月，按使用时间累计，超出部分0.05元/分钟</string>
+    <string name="sms_cmcc_open_10_msg">套餐2，10元包5小时/月，按使用时间累计，超出部分0.05元/分钟</string>
+    <string name="sms_cmcc_open_20_msg">套餐3，20元包15小时/月，按使用时间累计，超出部分0.05元/分钟</string>
+    <string name="sms_cmcc_open_30_msg">套餐4，30元包30小时/月，按使用时间累计，超出部分0.05元/分钟</string>
+    <string name="sms_cmcc_open_50_msg">套餐5，50元包80小时/月，按使用时间累计，超出部分0.05元/分钟</string>
+    <string name="sms_cmcc_open_100_msg">套餐6，100元包200小时/月，按使用时间累计，超出部分0.05元/分钟</string>
+    <string name="sms_cmcc_open_200_msg">套餐7，200元包月不限时</string>
+    
+    <!-- help -->
+    <string name="help_content">"&lt;p>欢迎使用中国移动WLAN连接管理器，它能帮助您在任何时间、任何地点接入到合适的网络，使您不必再烦恼于网络的搜索、切换，让您轻松畅游网络世界。&lt;/p>
+        &lt;p>在首次运行客户端后，请先进行CMCC相关账号的设置，点击主窗体下方的“账户”按钮，输入CMCC或CMCC-AUTO的用户信息，如您没有CMCC-AUTO的账号，可以在如何获取用户名密码页面进行申请，申请成功后会自动保存，无需手动输入。&lt;/p>
+        &lt;p>点击主窗体的“开始”按钮，客户端通过与后端的服务器进行通讯来获得周围可用的网络，如果想更直观的查看周围可用的热点信息，可以点击“地图”按钮，单击每个热点会弹出详细的信息，可以选择连接或者查看到达此热点的线路。&lt;/p>
+        &lt;p>&lt;font color='#00a2ff'>状态按钮&lt;/font>&lt;br/>显示当前状态，连接到哪个网络，以及连接时长&lt;/p>
+        &lt;p>&lt;font color='#00a2ff'>设置页面&lt;/font>&lt;br/>提供相关的设置选项
+        &lt;br/>&lt;br/>1、自动运行&lt;br/>选中后客户端随系统启动
+        &lt;br/>&lt;br/>2、WiFi开关&lt;br/>打开/关闭系统的WiFi
+        &lt;br/>&lt;br/>3、WiFi信号强度检测&lt;br/>在接入WLAN前会先检测信号强度是否达到接入标准
+        &lt;br/>&lt;br/>4、动态策略获取&lt;br/>选中后客户端会根据用户当前位置等信息的变化从服务器下载策略文件，包含当前周围可用的WLAN网络，并接入最优网络
+        &lt;br/>&lt;br/>5、应用策略询问与热点提醒&lt;br/>选中后如果周围有热点会提示，并在应用策略连接网络时会提示用户，让用户进行选择是否连接
+        &lt;br/>&lt;br/>6、设定应用的优选网络&lt;br/>用户可以根据自己的偏好为特定的应用指定优先连接的网络，这样当应用启动后，并处于“激活（显示在屏幕上）”状态，客户端会优先连接用户为此应用指定的网络
+        &lt;br/>&lt;br/>7、WiFi偏好&lt;br/>选中后客户端会记住用户在某一位置的WiFi连接设置，在下一次用户进入同一区域时会提示用户是否按照之前的偏好进行连接
+        &lt;br/>&lt;br/>8、静态策略&lt;br/>如取消动态策略获取选项，则默认为静态策略，用户可以选择WiFi或者3G/2G优先连接
+        &lt;br/>&lt;br/>9、日志&lt;br/>显示应用过的策略信息，连接的网络等
+        &lt;/p>"
+    </string>
+    <string name="help_title">帮助</string>
+    
+    <!-- about -->
+    <string name="about_content">"版本：%1$s&lt;p>中国移动通信集团公司 版权所有©&lt;br>Copyright© 2012&lt;br>CMCC All Rights Reserved&lt;/p>&lt;p>此版本适用于Android 2.2及以上、Ophone 2.0操作系统的系列手机&lt;/p>&lt;p>客服电话：10086&lt;/p>"</string>
+    <string name="about_title">关于 %1$s</string>
+    
+    <!-- Log -->
+    <string name="log_get_policy_message"> 运行策略</string>
+    
+    <!-- guide -->
+    <string name="guide_start_app">开始体验</string>
+    
+    <!-- App policy -->
+    <string name="app_policy_title">设定应用的优选网络</string>
+    <string name="delete_item">删除</string>
+    <string name="delete_lable">警告</string>
+    <string name="app_select_title">选择程序</string>
+    <string name="app_network_select_title">选择网络</string>
+    <string name="app_network_select_content">您当前设置的为%1$s，与策略帮您选的不同，是否继续执行%1$s ？</string>
+    <string name="app_first_3g">3G/2G</string>
+	<string name="app_first_wifi">WiFi</string>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <com.chinamobile.android.connectionmanager.ui.TitleBar
+        android:id="@+id/TitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/titlebar_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/sms_center_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ff000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/sms_center_title_change_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#ff000000"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@drawable/nav_bg" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/label_select_set_notify"
+                        android:textColor="#ffffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!--
+             <RadioGroup
+            android:id="@+id/sms_action_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+                -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/radio_item_bg_selector" >
+
+                    <RadioButton
+                        android:id="@+id/sms_action_open_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/radio_button"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:text="@string/sms_open_acount_msg"
+                        android:textColor="#ff000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/radio_item_bg_selector" >
+
+                    <RadioButton
+                        android:id="@+id/sms_action_modify_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/radio_button"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:text="@string/sms_modify_account_pwd_msg"
+                        android:textColor="#ff000000" />
+                </LinearLayout>
+                <!-- </RadioGroup> -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp" >
+
+                    <include layout="@layout/dialog_modify_password" />
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp" >
+
+            <Button
+                android:id="@+id/send_sms"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_login"
+                android:text="@string/sms_send_sms_btn_msg"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

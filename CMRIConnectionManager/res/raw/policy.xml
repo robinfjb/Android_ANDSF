@@ -1,0 +1,102 @@
+<Policy>
+<P1>
+
+    <RulePriority>
+0
+    </RulePriority>
+
+    <PrioritizedAccess>
+        <PA1>
+            <AccessTechnology>
+3
+            </AccessTechnology>
+
+            <AccessId>
+PCCW1x
+            </AccessId>
+
+            <AccessNetworkPriority>
+3
+            </AccessNetworkPriority>
+        </PA1>
+
+        <PA2>
+            <AccessTechnology>
+3
+            </AccessTechnology>
+
+            <AccessId>
+CoovaChill
+            </AccessId>
+
+            <AccessNetworkPriority>
+0
+            </AccessNetworkPriority>
+        </PA2>
+    </PrioritizedAccess>
+
+    <ValidityArea>
+        <_3GPP_Location>
+            <L1>
+                <PLMN>
+46000
+                </PLMN>
+
+                <LAC>
+18c2
+                </LAC>
+
+                <GERAN_CI>
+1111001100100001
+                </GERAN_CI>
+            </L1>
+        </_3GPP_Location>
+    </ValidityArea>
+
+    <PLMN>
+46000
+    </PLMN>
+
+    <TimeOfDay>
+        <T1>
+            <TimeStart>
+000001
+            </TimeStart>
+
+            <TimeStop>
+235959
+            </TimeStop>
+        </T1>
+    </TimeOfDay>
+
+</P1>
+<P2>
+
+    <RulePriority>
+0
+    </RulePriority>
+
+    <PrioritizedAccess>
+        <AccessTechnology>
+1
+        </AccessTechnology>
+
+        <AccessNetworkPriority>
+1
+        </AccessNetworkPriority>
+    </PrioritizedAccess>
+
+    <TimeOfDay>
+        <T1>
+            <TimeStart>
+000001
+            </TimeStart>
+
+            <TimeStop>
+235959
+            </TimeStop>
+        </T1>
+    </TimeOfDay>
+
+</P2>
+</Policy>

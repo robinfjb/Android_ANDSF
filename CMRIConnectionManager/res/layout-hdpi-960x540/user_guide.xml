@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000"
+        android:orientation="vertical" >
+
+        <com.chinamobile.android.connectionmanager.ui.CMFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="35dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/point_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/page_cover" />
+
+            <ImageView
+                android:id="@+id/point_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/page_gray" />
+
+            <ImageView
+                android:id="@+id/point_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/page_gray" />
+
+            <ImageView
+                android:id="@+id/point_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/page_gray" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="20dp"
+		android:layout_marginBottom="45dp"
+		android:layout_gravity="bottom">
+		<Button
+			android:id="@+id/rl_goback"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+
+			android:background="@drawable/button_login"
+			android:layout_alignParentRight="true"
+			android:textSize="16sp"
+			android:textColor="@color/white"
+			android:visibility="gone"
+			android:text="@string/guide_start_app"/>
+	</RelativeLayout>
+</FrameLayout>

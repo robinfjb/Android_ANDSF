@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+     
+     
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="auto_run"
+        android:summary="@string/auto_run_summary"
+        android:title="@string/auto_run_title" 
+        android:layout="@layout/preference_item" />
+    
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="wifi_radio"
+        android:summary="@string/wifi_radio_off"
+        android:title="@string/wifi_radio_title" 
+        android:layout="@layout/preference_item" />
+    
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="signal_check"
+        android:summary="@string/signal_check_summary"
+        android:title="@string/signal_check_title" 
+        android:layout="@layout/preference_item" />
+    
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="dynamic"
+        android:summary="@string/dynamic_summary"
+        android:title="@string/dynamic_title"
+        android:layout="@layout/preference_item" />
+    
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="notify_check"
+        android:summary="@string/ask_before_apply_summary"
+        android:title="@string/ask_before_apply_title" 
+        android:layout="@layout/preference_item" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="preferred_check"
+        android:summary="@string/user_preferred_summary"
+        android:title="@string/user_preferred_title" 
+        android:layout="@layout/preference_item" />
+    <!-- <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="hotspot_note"
+        android:summary="@string/hotspot_notify_title"
+        android:title="@string/hotspot_notify_summary"
+        android:layout="@layout/preference_item" /> -->
+
+    <!-- <PreferenceScreen
+        android:key="account_set"
+        android:summary="@string/user_account_summary"
+        android:title="@string/user_account_title" 
+        android:layout="@layout/preference_item"/> -->
+    <PreferenceScreen
+        android:key="app_set"
+        android:summary="@string/app_setting_summary"
+        android:title="@string/app_setting_title" 
+        android:layout="@layout/preference_item" />
+    <PreferenceScreen
+        android:key="static_set"
+        android:title="@string/static_setting_title" 
+        android:layout="@layout/preference_item" />
+    <PreferenceScreen
+        android:key="log_view"
+        android:summary="@string/log_option_summary"
+        android:title="@string/log_option_title" 
+        android:layout="@layout/preference_item" />
+    
+
+</PreferenceScreen>

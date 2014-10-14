@@ -1,0 +1,12 @@
+com.chinamobile.android.connectionmanager
+com.chinamobile.android.connectionmanager.controller
+com.chinamobile.android.connectionmanager.database
+com.chinamobile.android.connectionmanager.http
+com.chinamobile.android.connectionmanager.manager
+com.chinamobile.android.connectionmanager.model
+com.chinamobile.android.connectionmanager.omadm
+com.chinamobile.android.connectionmanager.omadm.protocol
+com.chinamobile.android.connectionmanager.receiver
+com.chinamobile.android.connectionmanager.test
+com.chinamobile.android.connectionmanager.ui
+com.chinamobile.android.connectionmanager.util

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<com.chinamobile.android.connectionmanager.ui.BottomMenu
+        android:id="@+id/hotspot_menu_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <com.baidu.mapapi.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/hotspot_menu_linearlayout"
+        android:clickable="true" />
+
+   <!--  <ProgressBar android:id="@+android:id/progress_small"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerInParent="true"/> -->
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_alignParentTop="true"
+        android:id="@+id/route_area"
+        android:visibility="gone"
+        android:background="@drawable/route_background"
+        android:padding="10dp"
+     >
+
+        <!-- <EditText
+            android:id="@+id/start"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/route_search_my_location" />
+
+        <EditText
+            android:id="@+id/end"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/> -->
+          <LinearLayout 
+               android:layout_width="wrap_content"
+               android:minWidth="200dp"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+            <Button
+                android:id="@+id/route_drive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/route_drive_btn"
+                android:background="@drawable/button_login" 
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/route_transit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/route_drive"
+                android:text="@string/route_bus_btn" 
+                android:background="@drawable/button_login"
+                android:layout_weight="1" 
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/route_walk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/route_transit"
+                android:text="@string/route_walk_btn" 
+                android:background="@drawable/button_login"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp" />
+            
+            </LinearLayout>
+            
+            <ImageView
+	            android:id="@+id/map_route_close"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="right"
+	            android:background="@drawable/close" 
+	            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+    
+    
+</RelativeLayout>

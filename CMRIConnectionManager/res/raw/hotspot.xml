@@ -1,0 +1,48 @@
+<DiscoveryInformation>
+<D1>
+      <AccessNetworkType>3</AccessNetworkType>
+      <AccessNetworkArea>
+        <_3GPP_Location>
+          <C1>
+            <PLMN>46000</PLMN>
+            <LAC>234</LAC>
+            <GERAN_CI>12345</GERAN_CI>
+          </C1>
+        </_3GPP_Location>
+        <Geo_Location>
+          <Circular>
+            <L1>
+              <AnchorLatitude>31.206543</AnchorLatitude>
+              <AnchorLongitude>121.597814</AnchorLongitude>
+              <Radius>100</Radius>
+            </L1>
+          </Circular>
+        </Geo_Location>
+        <AccessNetworkInformationRef>./NAP/WLAN1</AccessNetworkInformationRef>
+        <PLMN>46000</PLMN>
+      </AccessNetworkArea>
+</D1>
+<D2>
+      <AccessNetworkType>3</AccessNetworkType>
+      <AccessNetworkArea>
+        <_3GPP_Location>
+          <C1>
+            <PLMN>46000</PLMN>
+            <LAC>234</LAC>
+            <GERAN_CI>12345</GERAN_CI>
+          </C1>
+        </_3GPP_Location>
+        <Geo_Location>
+          <Circular>
+            <L1>
+              <AnchorLatitude>31.209461</AnchorLatitude>
+              <AnchorLongitude>121.598543</AnchorLongitude>
+              <Radius>100</Radius>
+            </L1>
+          </Circular>
+        </Geo_Location>
+        <AccessNetworkInformationRef>./NAP/WLAN1</AccessNetworkInformationRef>
+        <PLMN>46000</PLMN>
+      </AccessNetworkArea>
+    </D2>
+</DiscoveryInformation>
